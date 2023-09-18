@@ -1,6 +1,46 @@
-@import '../@theme/styles/themes';
+@import "../@theme/styles/themes";
 
 @include nb-install-component() {
+  ::ng-deep nb-menu {
+    .menu-item {
+      a {
+        position: relative;
+      }
+      a.active {
+        color: #222b45;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 30%;
+          height: 2px; /* The border thickness */
+          background-color: #feb501;
+        }
+        .menu-icon {
+          color: #8f9bb3;
+        }
+      }
+
+      a:hover {
+        color: #8f9bb3;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 30%;
+          height: 2px; /* The border thickness */
+          background-color: #feb501;
+        }
+
+        .menu-icon {
+          color: #8f9bb3;
+        }
+      }
+    }
+  }
+
   ::ng-deep router-outlet + * {
     display: block;
     animation: fade 1s;
