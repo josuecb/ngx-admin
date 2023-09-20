@@ -1,0 +1,116 @@
+.home {
+  &__container {
+  }
+
+  &__wrapper {
+  }
+
+  &__title {
+    font-weight: 500;
+    position: relative;
+    display: inline;
+    padding: 8px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      height: 2px; /* The border thickness */
+      background-color: #fdcc29;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__overview {
+    &-title {
+      margin-top: 24px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-widgets {
+      ::ng-deep nb-card-header {
+        border-bottom: none;
+      }
+    }
+
+    &__card {
+      &.chart-pie-card {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border: none !important;
+        margin-bottom: 0;
+      }
+      &-header {
+        display: flex;
+      }
+      &-body {
+        display: flex;
+        .subtitle-container {
+          flex: 1;
+          .subtitle-text {
+            font-size: 12px;
+          }
+          .content-container {
+            display: flex;
+            margin-top: 8px;
+            align-items: center;
+            .avatar {
+              i.fa-circle {
+                font-size: 24px;
+                margin-right: 8px;
+                color: #f2f1ef;
+              }
+            }
+            .content {
+              font-size: 22px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.icon-container {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin: auto 8px auto 8px;
+  .fas,
+  .far {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &.fa-info {
+      color: #2f7cc6;
+      font-size: 6px;
+      top: 4px;
+      left: 6px;
+    }
+    &.fa-circle {
+      font-size: 14px;
+      color: #2f7cc6;
+    }
+  }
+}
+
+.last-7-days-external-link {
+  margin-left: auto;
+  button {
+    font-size: 8px;
+    background-color: #e6eff8;
+    padding: 2px 4px;
+    color: #0662bb;
+    span {
+      margin-right: 6px;
+    }
+  }
+}
