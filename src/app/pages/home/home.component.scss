@@ -11,7 +11,7 @@
     display: inline;
     padding: 8px 0;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -83,7 +83,7 @@
   position: relative;
   width: 12px;
   height: 12px;
-  margin: auto 8px auto 8px;
+  margin: auto 8px;
   .fas,
   .far {
     position: absolute;

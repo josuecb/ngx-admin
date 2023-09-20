@@ -1,4 +1,4 @@
-@import "../@theme/styles/themes";
+@import '../@theme/styles/themes';
 
 @include nb-install-component() {
   ::ng-deep nb-menu {
@@ -9,7 +9,7 @@
           position: relative;
 
           &::after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 0;
             left: 0;
@@ -28,7 +28,7 @@
         span {
           position: relative;
           &::after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 0;
             left: 0;
