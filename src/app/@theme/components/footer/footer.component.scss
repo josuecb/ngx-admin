@@ -5,12 +5,25 @@
 @include nb-install-component() {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: #ffffff;
+  // justify-content: space-between;
+  // align-items: center;
 
-  .socials {
+  .footer {
     font-size: 2rem;
-
+    width: inherit;
+    color: inherit;
+    &__sepatator {
+      margin-top: 48px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+    &__captions {
+      margin-top: 24px;
+      margin: 24px 12px;
+      font-size: 8px;
+      color: inherit
+    }
     a {
       padding: 0.4rem;
       color: nb-theme(text-hint-color);
@@ -23,8 +36,8 @@
   }
 
   @include media-breakpoint-down(is) {
-    .socials {
-      font-size: 1.5rem;
+    .footer {
+      // font-size: 1.5rem;
     }
   }
 }

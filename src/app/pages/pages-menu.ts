@@ -7,246 +7,182 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
-    title: "E-commerce",
-    icon: "shopping-cart-outline",
-    link: "/pages/dashboard",
-    home: true,
-  },
-  {
-    title: "IoT Dashboard",
-    icon: "home-outline",
-    link: "/pages/iot-dashboard",
-  },
-  {
-    title: "FEATURES",
-    group: true,
-  },
-  {
-    title: "Layout",
-    icon: "layout-outline",
+    title: "Shipment",
+    link: "/pages/shipment",
     children: [
       {
-        title: "Stepper",
-        link: "/pages/layout/stepper",
+        title: "Rate Shipment",
+        link: "/pages/shipment/rate_shipment",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "List",
-        link: "/pages/layout/list",
+        title: "Work Distribution",
+        link: "/pages/shipment/work_distribution",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "Infinite List",
-        link: "/pages/layout/infinite-list",
+        title: "Mass Update Shipment",
+        link: "/pages/shipment/mass_update_shipment",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "Accordion",
-        link: "/pages/layout/accordion",
+        title: "Archive Search",
+        link: "/pages/shipment/archive_search",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "Tabs",
-        pathMatch: "prefix",
-        link: "/pages/layout/tabs",
+        title: "Auditing",
+        link: "/pages/shipment/auditing",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Audit",
+        link: "/pages/shipment/audit",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
     ],
-  },
-  {
-    title: "Forms",
-    icon: "edit-2-outline",
-    children: [
-      {
-        title: "Form Inputs",
-        link: "/pages/forms/inputs",
-      },
-      {
-        title: "Form Layouts",
-        link: "/pages/forms/layouts",
-      },
-      {
-        title: "Buttons",
-        link: "/pages/forms/buttons",
-      },
-      {
-        title: "Datepicker",
-        link: "/pages/forms/datepicker",
-      },
-    ],
-  },
-  {
-    title: "UI Features",
-    icon: "keypad-outline",
-    link: "/pages/ui-features",
-    children: [
-      {
-        title: "Grid",
-        link: "/pages/ui-features/grid",
-      },
-      {
-        title: "Icons",
-        link: "/pages/ui-features/icons",
-      },
-      {
-        title: "Typography",
-        link: "/pages/ui-features/typography",
-      },
-      {
-        title: "Animated Searches",
-        link: "/pages/ui-features/search-fields",
-      },
-    ],
-  },
-  {
-    title: "Modal & Overlays",
-    icon: "browser-outline",
-    children: [
-      {
-        title: "Dialog",
-        link: "/pages/modal-overlays/dialog",
-      },
-      {
-        title: "Window",
-        link: "/pages/modal-overlays/window",
-      },
-      {
-        title: "Popover",
-        link: "/pages/modal-overlays/popover",
-      },
-      {
-        title: "Toastr",
-        link: "/pages/modal-overlays/toastr",
-      },
-      {
-        title: "Tooltip",
-        link: "/pages/modal-overlays/tooltip",
-      },
-    ],
-  },
-  {
-    title: "Extra Components",
-    icon: "message-circle-outline",
-    children: [
-      {
-        title: "Calendar",
-        link: "/pages/extra-components/calendar",
-      },
-      {
-        title: "Progress Bar",
-        link: "/pages/extra-components/progress-bar",
-      },
-      {
-        title: "Spinner",
-        link: "/pages/extra-components/spinner",
-      },
-      {
-        title: "Alert",
-        link: "/pages/extra-components/alert",
-      },
-      {
-        title: "Calendar Kit",
-        link: "/pages/extra-components/calendar-kit",
-      },
-      {
-        title: "Chat",
-        link: "/pages/extra-components/chat",
-      },
-    ],
-  },
-  {
-    title: "Maps",
-    icon: "map-outline",
-    children: [
-      {
-        title: "Google Maps",
-        link: "/pages/maps/gmaps",
-      },
-      {
-        title: "Leaflet Maps",
-        link: "/pages/maps/leaflet",
-      },
-      {
-        title: "Bubble Maps",
-        link: "/pages/maps/bubble",
-      },
-      {
-        title: "Search Maps",
-        link: "/pages/maps/searchmap",
-      },
-    ],
-  },
-  {
-    title: "Charts",
-    icon: "pie-chart-outline",
-    children: [
-      {
-        title: "Echarts",
-        link: "/pages/charts/echarts",
-      },
-      {
-        title: "Charts.js",
-        link: "/pages/charts/chartjs",
-      },
-      {
-        title: "D3",
-        link: "/pages/charts/d3",
-      },
-    ],
-  },
-  {
-    title: "Editors",
-    icon: "text-outline",
-    children: [
-      {
-        title: "TinyMCE",
-        link: "/pages/editors/tinymce",
-      },
-      {
-        title: "CKEditor",
-        link: "/pages/editors/ckeditor",
-      },
-    ],
-  },
-  {
-    title: "Tables & Data",
-    icon: "grid-outline",
-    children: [
-      {
-        title: "Smart Table",
-        link: "/pages/tables/smart-table",
-      },
-      {
-        title: "Tree Grid",
-        link: "/pages/tables/tree-grid",
-      },
-    ],
+
   },
   {
     title: "Miscellaneous",
-    icon: "shuffle-2-outline",
+    link: "/pages/miscellaneous",
     children: [
       {
-        title: "404",
-        link: "/pages/miscellaneous/404",
+        title: "Report",
+        link: "/pages/miscellaneous/report",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Customer",
+        link: "/pages/miscellaneous/customer",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Shipment History",
+        link: "/pages/miscellaneous/shipment_history",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Virtual Shipment",
+        link: "/pages/miscellaneous/virtual_shipment",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Consolidate",
+        link: "/pages/miscellaneous/consolidate",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Consolidate Freight",
+        link: "/pages/miscellaneous/consolidate_freight",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
     ],
   },
   {
-    title: "Auth",
-    icon: "lock-outline",
+    title: "Way Bill",
+    link: "/pages/waybill",
     children: [
       {
-        title: "Login",
-        link: "/auth/login",
+        title: "View Waybill",
+        link: "/pages/waybill/view",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "Register",
-        link: "/auth/register",
+        title: "Edit Waybill",
+        link: "/pages/waybill/edit",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "Request Password",
-        link: "/auth/request-password",
+        title: "Edit Movements",
+        link: "/pages/waybill/edit_movements",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
       {
-        title: "Reset Password",
-        link: "/auth/reset-password",
+        title: "Mass Update Waybill",
+        link: "/pages/waybill/mass_update",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
       },
+    ]
+  },
+  
+  {
+    title: "Admin",
+    link: "/pages/admin",
+    children: [
+      {
+        title: "View Proccess Status",
+        link: "/pages/admin/view_proccess_status",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Report Erroed Shipment",
+        link: "/pages/admin/report_erroed_shipment",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Manage Master Data",
+        link: "/pages/admin/manage_master_data",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+        children: [
+          {
+            title: "View Waybill",
+            link: "/pages/waybill/view",
+            icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+          },
+          {
+            title: "Edit Waybill",
+            link: "/pages/waybill/edit",
+            icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+          },
+          {
+            title: "Edit Movements",
+            link: "/pages/waybill/edit_movements",
+            icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+          },
+          {
+            title: "Mass Update Waybill",
+            link: "/pages/waybill/mass_update",
+            icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+          },
+        ]
+      },
+      {
+        title: "Manage Work Groups",
+        link: "/pages/admin/manage_work_groups",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Manage Customer Pri...",
+        link: "/pages/admin/manage_customer",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Manage User Profile",
+        link: "/pages/admin/manage_user_profile",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+    ],
+  },
+  {
+    title: "Security",
+    link: "/pages/security",
+    children: [
+      {
+        title: "Manage Users",
+        link: "/pages/security/manage_users",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Manage Groups",
+        link: "/pages/security/manage_groups",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      },
+      {
+        title: "Manage Applications",
+        link: "/pages/security/manage_applications",
+        icon: { icon: "arrow-forward-outline", pack: "eva", options: [{ animation: { type: 'zoom' }}]},
+      }
     ],
   },
 ];

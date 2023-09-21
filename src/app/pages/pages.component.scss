@@ -1,44 +1,92 @@
-@import '../@theme/styles/themes';
+@import "../@theme/styles/themes";
 
 @include nb-install-component() {
   ::ng-deep nb-menu {
-    .menu-item {
-      a.active {
-        color: #222b45;
-        span {
-          position: relative;
+    .menu-items {
+      li {
+        &.menu-item {
+          border-bottom: none;
+          a {
+            .expand-state {
+              transition: transform 1 ease-in-out;
+              &[ng-reflect-icon="chevron-left-outline"] {
+                transform: rotate(-90deg);
+              }
+              &[ng-reflect-icon="chevron-down-outline"] {
+                transform: rotate(180deg);
+              }
+            }
+            &.active {
+              color: #222b45;
+              span {
+                position: relative;
 
-          &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 10%;
-            height: 2px; /* The border thickness */
-            background-color: #fdcc29;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 10%;
+                  height: 2px; /* The border thickness */
+                  background-color: #fdcc29;
+                }
+              }
+              
+              .menu-icon {
+                color: #8f9bb3;
+              }
+            }
+          }
+
+          a:hover {
+            color: #8f9bb3;
+            span {
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 10%;
+                height: 2px; /* The border thickness */
+                background-color: #fdcc29;
+              }
+            }
+            .menu-icon {
+              color: #8f9bb3;
+            }
           }
         }
-        .menu-icon {
-          color: #8f9bb3;
-        }
-      }
 
-      a:hover {
-        color: #8f9bb3;
-        span {
-          position: relative;
-          &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 10%;
-            height: 2px; /* The border thickness */
-            background-color: #fdcc29;
+        ul {
+          &.menu-items {
+            li {
+              &.menu-item {
+                a {
+                  display: flex;
+                  flex-direction: row-reverse;
+                  transition: transform 1 ease-in-out;
+                  padding-right: 0;
+                  &:hover {
+                    color: #8f9bb3;
+                    transition: transform 1 ease-in-out;
+                  }
+                  &[aria-expanded="true"], &[aria-expanded="false"]{
+                    flex-direction: unset;
+                    .menu-icon {
+                      display: none;
+                    }
+                  }
+                  
+                  .menu-icon {
+                    opacity: 0;
+                    color: #8f9bb3;
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
           }
-        }
-        .menu-icon {
-          color: #8f9bb3;
         }
       }
     }
