@@ -1,4 +1,4 @@
-@import "../@theme/styles/themes";
+@import '../@theme/styles/themes';
 
 @include nb-install-component() {
   ::ng-deep nb-menu {
@@ -9,10 +9,10 @@
           a {
             .expand-state {
               transition: transform 1 ease-in-out;
-              &[ng-reflect-icon="chevron-left-outline"] {
+              &[ng-reflect-icon='chevron-left-outline'] {
                 transform: rotate(-90deg);
               }
-              &[ng-reflect-icon="chevron-down-outline"] {
+              &[ng-reflect-icon='chevron-down-outline'] {
                 transform: rotate(180deg);
               }
             }
@@ -22,7 +22,7 @@
                 position: relative;
 
                 &::after {
-                  content: "";
+                  content: '';
                   position: absolute;
                   bottom: 0;
                   left: 0;
@@ -31,7 +31,7 @@
                   background-color: #fdcc29;
                 }
               }
-              
+
               .menu-icon {
                 color: #8f9bb3;
               }
@@ -43,7 +43,7 @@
             span {
               position: relative;
               &::after {
-                content: "";
+                content: '';
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -71,13 +71,14 @@
                     color: #8f9bb3;
                     transition: transform 1 ease-in-out;
                   }
-                  &[aria-expanded="true"], &[aria-expanded="false"]{
+                  &[aria-expanded='true'],
+                  &[aria-expanded='false'] {
                     flex-direction: unset;
                     .menu-icon {
                       display: none;
                     }
                   }
-                  
+
                   .menu-icon {
                     opacity: 0;
                     color: #8f9bb3;
