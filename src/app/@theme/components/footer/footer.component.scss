@@ -1,6 +1,6 @@
-@import '../../styles/themes';
-@import '@nebular/theme/styles/global/breakpoints';
-@import 'bootstrap/scss/mixins/breakpoints';
+@import "../../styles/themes";
+@import "@nebular/theme/styles/global/breakpoints";
+@import "bootstrap/scss/mixins/breakpoints";
 
 @include nb-install-component() {
   width: 100%;
@@ -22,7 +22,7 @@
       margin-top: 24px;
       margin: 24px 12px;
       font-size: 8px;
-      color: inherit
+      color: inherit;
     }
     a {
       padding: 0.4rem;
